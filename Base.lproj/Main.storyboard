@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgres" translatesAutoresizingMaskIntoConstraints="NO" id="DX5-Ie-ucx">
+                                <rect key="frame" x="-38" y="220" width="395" height="128"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqC-vj-vos">
+                                <rect key="frame" x="12" y="10" width="297" height="548"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDB-t3-D6g">
+                                        <rect key="frame" x="0.0" y="393" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                        <state key="normal" title="+/-" backgroundImage="square-button-clear-hi-1">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sign" destination="BYZ-38-t0r" eventType="touchUpInside" id="6og-Ro-2zG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8Q-uV-fz9">
+                                        <rect key="frame" x="236" y="244" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                        <state key="normal" title="-" backgroundImage="square-button-clear-hi-1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sub" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDq-n4-QcC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eq-3A-F0k">
+                                        <rect key="frame" x="236" y="318" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                        <state key="normal" title="x" backgroundImage="square-button-clear-hi-1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mul" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrV-te-mAZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRP-Wr-Zbo">
+                                        <rect key="frame" x="236" y="393" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                        <state key="normal" title="/" backgroundImage="square-button-clear-hi-1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="div" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gyd-QK-hjO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmE-Fd-1hO">
+                                        <rect key="frame" x="162" y="461" width="127" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                        <state key="normal" title="=" backgroundImage="square-big-button">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="eq" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzN-cK-0xZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5g-FR-6yF">
+                                        <rect key="frame" x="0.0" y="461" width="138" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                        <state key="normal" title="AC" backgroundImage="square-big-button">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="butAllClear" destination="BYZ-38-t0r" eventType="touchUpInside" id="5tx-P4-Mp7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7u-SN-E1d">
+                                        <rect key="frame" x="236" y="170" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                        <state key="normal" title="+" backgroundImage="square-button-clear-hi-1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="add" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qmf-eO-IV2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFH-1d-YCz">
+                                        <rect key="frame" x="162" y="393" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                        <state key="normal" title="." backgroundImage="square-button-clear-hi-1">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dec" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Vf-Vz-v1U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-Lu-sVx">
+                                        <rect key="frame" x="78" y="170" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="2" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dos" destination="BYZ-38-t0r" eventType="touchUpInside" id="KxC-j7-e4t"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHm-69-eyP">
+                                        <rect key="frame" x="18" y="75" width="261" height="66"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="36"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1D1-ww-4vc">
+                                        <rect key="frame" x="78" y="393" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="0" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="zero" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fm-fg-m9S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F00-Te-Q0H">
+                                        <rect key="frame" x="0.0" y="170" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="1" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="uno" destination="BYZ-38-t0r" eventType="touchUpInside" id="zwa-Mo-QVb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4J-pZ-Ldr">
+                                        <rect key="frame" x="161" y="170" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="3" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tres" destination="BYZ-38-t0r" eventType="touchUpInside" id="M0Q-CR-D1C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dD3-pG-l3v">
+                                        <rect key="frame" x="0.0" y="244" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="4" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="quatro" destination="BYZ-38-t0r" eventType="touchUpInside" id="ukn-5x-jWs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjt-nR-KhR">
+                                        <rect key="frame" x="78" y="244" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="5" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cinco" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZNI-7T-avj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYu-iw-bzI">
+                                        <rect key="frame" x="161" y="244" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="6" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seis" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nfz-ff-syz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwn-bJ-Pn4">
+                                        <rect key="frame" x="0.0" y="318" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="7" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seite" destination="BYZ-38-t0r" eventType="touchUpInside" id="YzE-oM-rbV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-64-sR2">
+                                        <rect key="frame" x="78" y="318" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="8" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ocho" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRh-BK-zon"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVx-OT-8zT">
+                                        <rect key="frame" x="57" y="21" width="183" height="31"/>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="22"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esj-8c-PjT">
+                                        <rect key="frame" x="161" y="318" width="60" height="60"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="9" backgroundImage="square-button-clear-hi">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nueve" destination="BYZ-38-t0r" eventType="touchUpInside" id="sen-gh-hoY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="B3f-vP-SSM"/>
+                                    <constraint firstAttribute="height" constant="548" id="Ldx-vD-aqh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pqC-vj-vos" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1hG-pd-mpZ"/>
+                            <constraint firstItem="DX5-Ie-ucx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HJU-cJ-xdc"/>
+                            <constraint firstItem="pqC-vj-vos" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dW9-hz-dcF"/>
+                            <constraint firstItem="DX5-Ie-ucx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wRg-Zp-1QL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clearButton" destination="U5g-FR-6yF" id="A6f-ZE-dxf"/>
+                        <outlet property="display" destination="eHm-69-eyP" id="yx2-69-ABg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgres" width="395" height="128"/>
+        <image name="square-big-button" width="400" height="400"/>
+        <image name="square-button-clear-hi" width="600" height="600"/>
+        <image name="square-button-clear-hi-1" width="600" height="600"/>
+    </resources>
+</document>
